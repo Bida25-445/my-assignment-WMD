@@ -1,0 +1,80 @@
+/*designing the body*/
+body {
+    margin: 0;
+    color: white;
+    font-family: Arial;
+}
+
+.cars{
+    position: relative;
+    height: 100vh;
+}
+
+/*BMW Middle*/
+.bmw{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("images/bmw-m5") center/cover;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Re tsenys mercedes yanoong ka ha lefting */
+.merc{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url() center/cover;
+    clip-path: polygon(0 0, 50% 0, 0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*AUDIIII My Daily o tsena a fa righting*/
+.audi{
+   position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url() center/cover;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+/*Re tsenya makwalo go daaaaa*/
+.cta{
+    padding: 60px;
+    background: black;
+    text-align: center;
+}
+
+/*Dinaoo di tsena fa ko tlaseeee*/
+footer{
+    background: black;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Bahto ba ba senang di laptop ga bana go bona monate wa website ye*/
+@media(max-width:768px){
+
+    .cars{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.bmw, .merc, .audi{
+    position: relative;
+    clip-path: none;
+    height: 300px;
+}
+}
+
+
+
