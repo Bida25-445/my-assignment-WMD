@@ -3,54 +3,81 @@ body {
     margin: 0;
     color: white;
     font-family: Arial;
+    background: #0a0a0a;
+    text-align: center;
 }
 
-.cars{
-    position: relative;
+.hero{
+    padding-top: 60px;
     height: 100vh;
 }
 
-/*BMW Middle*/
+h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/*BUTTON*/
+
+.btn{
+    background: #333;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.main-btn{
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+}
+
+/*CAR AREA*/
+
+.cars{
+    position: relative;
+    width: 900px;
+    margin: auto;
+    height: 400px;
+}
+
+/*CAR IMAGES*/
+
+.car{
+    position: absolute;
+    width: 300px;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: 1.5s;
+}
+
+/*POSITIONS*/
+
 .bmw{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url("images/bmw-m5") center/cover;
-    clip-path: polygon(50% 0, 100% 100%, 0 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    left: 300px;
+    top: 0;
 }
 
-/*Re tsenys mercedes yanoong ka ha lefting */
 .merc{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url() center/cover;
-    clip-path: polygon(0 0, 50% 0, 0 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    left: 0;
+    top: 120px;
 }
 
-/*AUDIIII My Daily o tsena a fa righting*/
 .audi{
-   position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url() center/cover;
-    clip-path: polygon(50% 0, 100% 0, 100% 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+    right: 0;
+    top: 120px;
 }
 
-/*Re tsenya makwalo go daaaaa*/
-.cta{
-    padding: 60px;
-    background: black;
-    text-align: center;
+/*ANIMATION CLASS*/
+
+.show{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /*Dinaoo di tsena fa ko tlaseeee*/
@@ -60,21 +87,7 @@ footer{
     padding: 20px;
 }
 
-/*Bahto ba ba senang di laptop ga bana go bona monate wa website ye*/
-@media(max-width:768px){
 
-    .cars{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-}
-
-.bmw, .merc, .audi{
-    position: relative;
-    clip-path: none;
-    height: 300px;
-}
-}
 
 
 
