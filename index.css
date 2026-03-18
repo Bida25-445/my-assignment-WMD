@@ -2,19 +2,99 @@
 body {
     margin: 0;
     color: white;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background: #0a0a0a;
     text-align: center;
 }
 
 .hero{
     padding-top: 60px;
-    height: 100vh;
+    min-height: 100vh;
+    background: #000;
+    overflow: hidden;
+    position: relative;
+}
+
+/*Dynamic ngwanaka*/
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255,208, 0, 0.18), transparent 70%);
+    filter: blur(70px);
+    z-index: 0;
+}
+
+.hero::after{
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(circle, rgba(255,255,255,0.10), transparent 70%);
+    filter: blur(75px);
+    z-index: 0;
+}
+
+/*WE want a glow for audi*/
+.audi-glow{
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(circle, rgba(255,255,255,0.18), transparent 70%);
+}
+
+/*Triangle boss*/
+.lines{
+    position: absolute;
+    inset:0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.line{
+    position: absolute;
+    background: rgba(255,255,255,0.15);
+}
+
+.line-center{
+    width: 2px;
+    height: 300px;
+    left: 50%;
+    top: 470px;
+    transform: translateX(-50%);
+}
+
+.line-left{
+    width: 2px;
+    height: 360px;
+    left: 39%;
+    top: 250px;
+    transform: rotate(58deg);
+    transform-origin: top;
+}
+
+.line-right{
+    width: 2px;
+    height: 360px;
+    right: 39%;
+    top: 250px;
+    transform: rotate(-58deg);
+    transform-origin: top;
 }
 
 h1{
     font-size: 40px;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 /*BUTTON*/
@@ -27,6 +107,13 @@ h1{
     color: white;
     display: inline-block;
     margin-bottom: 40px;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+/*needs to hover*/
+.btn:hover{
+    background: #444;
 }
 
 .main-btn{
@@ -35,6 +122,11 @@ h1{
     font-size: 28px;
     text-decoration: none;
     color: white;
+    position: relative;
+    z-index: 2;
+    padding: 14px 28px;
+    border-radius: 12px;
+    transition: 0.3s;
 }
 
 /*CAR AREA*/
@@ -43,7 +135,8 @@ h1{
     position: relative;
     width: 900px;
     margin: auto;
-    height: 400px;
+    height: 430px;
+    z-index: 2;
 }
 
 /*CAR IMAGES*/
@@ -61,16 +154,19 @@ h1{
 .bmw{
     left: 300px;
     top: 0;
+    width: 250px;
 }
 
 .merc{
-    left: 0;
-    top: 120px;
+    left: 40px;
+    top: 145px;
+    width: 260px;
 }
 
 .audi{
-    right: 0;
-    top: 120px;
+    right: 40px;
+    top: 145px;
+    width: 260px;
 }
 
 /*ANIMATION CLASS*/
@@ -85,6 +181,57 @@ footer{
     background: black;
     text-align: center;
     padding: 20px;
+}
+
+/*mobile skrrr*/
+@media(max-width:786px){
+    h1{
+        font-size: 28px;
+        padding: 0 20px;
+    }
+
+    .cars{
+        width: 100%;
+        height: 500px;
+    }
+
+    .bmw{
+        left: 50%;
+        transform: translateX(-50%) translateY(80px);
+        top: 20px;
+        width: 180px;
+    }
+
+    .merc{
+        left: 20px;
+        top: 220px;
+        width: 180px;
+    }
+
+    .audi{
+        right: 20px;
+        top: 220px;
+        width: 180px;
+    }
+
+    .show.bmw{
+        transform: translateX(-50%) translateY(0);
+    }
+
+    .main-btn{
+        font-size: 22px;
+    }
+
+    .line-center{
+        height: 220px;
+        top: 360px;
+    }
+
+    .line-left,
+    .line-right{
+        height: 250px;
+        top: 220px;
+    }
 }
 
 
