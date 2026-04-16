@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>German Dealer</title>
+    <title>Schwarzwald Autos</title>
 
     <!--Bootstrap CSS-->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,8 +16,8 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/Chrome emblem with “GD” monogram.png" alt="German Dealer logo" class="site-logo">
-                    <span>German Dealer</span>
+                    <img src="images/Chrome emblem with “GD” monogram.png" alt="Schwarzwald Autos logo" class="site-logo">
+                    <span>Schwarzwald Autos</span>
                 </a>
 
                 <!--Mobil nav-->
@@ -63,7 +63,49 @@
     </header>
 
     <main class="container my-5">
-        <h1>Page Content here</h1>
+        <section class="text-center mb-5">
+            <h1>Contact Us</h1>
+            <p>Get in touch with Schwarzwald Autos for enquiries, test drive bookings and support.
+                Our team is ready to assist you with premium information and dealership services.
+            </p>
+        </section>
+
+        <section class="row">
+            <div class="col-md-5 mb-4">
+                <h3>Contact Information</h3>
+                <p><strong>Email:</strong> infor@germandealer.com</p>
+                <p><Strong>Phone:</Strong>3906000/ +267 123 4567</p>
+                <p><strong>Location:</strong>Gaborone, Botswana</p>
+            </div>
+
+            <div class="col-md-7">
+                <h3>Send Us a Message</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="brand" class="form-label">Preferred Brand</label>
+                        <select class="form-select" id="brand" required>
+                            <option value="">Choose a brand</option>
+                            <option>BMW</option>
+                            <option>Audi</option>
+                            <option>Mercedes</option>
+                            <option>Porsche</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" required>Enter Details e.g X3M quote, test-drive e.t.c</textarea>    
+                    </div>
+
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer class="bg-dark text-white mt-5">
@@ -103,7 +145,7 @@
         </div>
 
         <div class="text-center pb-3">
-            <p>&copy: 2026 German Dealer</p>
+            <p>&copy; 2026 Schwarzwald Autos</p>
         </div>
     </footer>
 
