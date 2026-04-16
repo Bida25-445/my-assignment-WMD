@@ -1,5 +1,4 @@
-/*Consistent across all pages*/
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f5f5f5;
     color: #111;
@@ -7,171 +6,200 @@ body{
     padding: 0;
 }
 
-h1,h2,h3,h4.h5{
-    font-weight: bold;
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
     margin-bottom: 15px;
 }
 
-p{
-    line-height: 1.6;
+p {
+    line-height: 1.7;
+    font-size: 1rem;
 }
 
-/*Brand logo*/
-.site-logo{
+.site-logo {
     width: 40px;
     height: 40px;
     object-fit: contain;
     margin-right: 8px;
 }
 
-.navbar-brand{
+.navbar-brand {
     display: flex;
     align-items: center;
     font-weight: bold;
     gap: 8px;
 }
 
-/*Navigation*/
-.navbar{
+.navbar {
     padding-top: 12px;
     padding-bottom: 12px;
 }
 
-.nav-link{
+.nav-link {
     font-weight: 500;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     border-radius: 0;
 }
 
-/*Hero sectioning*/
-.hero-section img{
-    width: 100%;
-    max-height: 500px;
-    object-fit: cover;
-}
-
-.hero-section h1{
-    font-size: 2.5rem;
-    margin-top: 20px;
-}
-
-.hero-section p{
-    font-size: 1.1rem;
-    color: #444;
-}
-
-/*Section Spacing*/
-section{
+section {
     margin-bottom: 50px;
 }
 
-/*Dikarata*/
-.card{
+.card,
+.specs-box {
     border: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-radius: 12px;
 }
 
-.card img{
-    height: 220px;
+.specs-box {
+    padding: 24px;
+}
+
+.brand-main-image {
+    width: 100%;
+    border-radius: 12px;
     object-fit: cover;
 }
 
-.card-title{
-    font-weight: bold;
+.sub-model-image {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
-.card-text{
+.model-row {
+    padding: 10px 0;
+}
+
+.model-row h3 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.model-row p {
+    margin-bottom: 10px;
     color: #444;
 }
 
-/*Buttonss*/
-.btn-dark, .btn-outline-dark, .btn-primary{
+.btn-dark,
+.btn-outline-dark,
+.btn-primary {
     border-radius: 0;
     padding: 10px 20px;
     font-weight: 500;
 }
 
-/*About page*/
-.about-image{
-    width: 100%;
-    border-radius: 10px;
-}
-
-/*Contact Page*/
-form{
-    background-color: white;
-    padding: 25px;
-    border-radius: 10px;
+.accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 12px !important;
+    overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-.form-control, .form-select{
-    border-radius: 0;
-    padding: 10px;
+.accordion-button {
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 18px 20px;
 }
 
-/*News Page*/
-.latest-news .card img{
-    height: 200px;
-    object-fit: cover;
-}
-
-/*Brand Page*/
-.brand-main-image{
-    width: 100%;
-    border-radius: 10px;
-}
-
-.specs-box{
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
-
-/*footer*/
-footer{
+.accordion-button:not(.collapsed) {
     background-color: #111;
     color: white;
 }
 
-footer h5{
+.accordion-body {
+    background: white;
+    padding: 25px;
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 12px;
+}
+
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.form-control,
+.form-select {
+    border-radius: 0;
+    padding: 10px;
+}
+
+.card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    color: #444;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+}
+
+footer h5 {
     margin-bottom: 15px;
     font-size: 1.1rem;
 }
 
-footer ul{
+footer ul {
     padding-left: 0;
 }
 
-footer ul li{
+footer ul li {
     list-style: none;
     margin-bottom: 8px;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: white;
 }
 
-footer a:hover{
+footer a:hover {
     color: #ccc;
 }
 
-footer p{
+footer p {
     margin-bottom: 0;
 }
 
-/*Responsive*/
-@media(max-width:768px) {
-    .hero-section h1{
+@media (max-width: 768px) {
+    h1 {
         font-size: 2rem;
     }
-}
 
-.card img{
-    height: 180px;
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .model-row h3 {
+        font-size: 1.5rem;
+        margin-top: 15px;
+    }
+
+    .sub-model-image {
+        max-height: 240px;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+    }
 }

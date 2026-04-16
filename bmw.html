@@ -69,11 +69,11 @@
         </section>
 
         <section class="row align-items-center mb-5">
-            <div class="col-md-8">
+            <div class="col-md-8 mb-4">
                 <img src="images/m5cs.avif" alt="BMW featured car" class="img-fluid rounded">
             </div>
-            <div class="col-md-4">
-                <div class="card p-3">
+            <div class="col-lg-4">
+                <div class="specs-box">
                     <h3>BMW M5 CS</h3>
                     <p><strong>Engine:</strong>4.4L Twin Turbo V8</p>
                     <p><strong>Transmission:</strong>8-Speed Automatic DCT with interchangable AWD</p>
@@ -93,40 +93,177 @@
             </p>
         </section>
 
-        <section>
-            <h2 class="mb-4">More BMW Models</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 text-center">
-                        <img src="images/m4.avif" class="card-img-top" alt="BMW model">
-                        <div class="card-body">
-                            <h5 class="card-title">BMW M4</h5>
-                            <p class="card-text">Sporty coupe with sharp design and strong perfomance.</p>
-                        </div>
-                    </div>
-                </div>
+        <section class="mb-5">
+            <h2 class="mb-4">Explore More BMW Models</h2>
 
-                <div class="col-md-4">
-                    <div class="card h-100 text-center">
-                        <img src="images/x6m.avif" class="card-img-top" alt="BMW model">
-                        <div class="card-body">
-                            <h5 class="card-title">BMW X6 M</h5>
-                            <p class="card-text">Luxury SUV with aggressive styling and power.</p>
-                        </div>
-                    </div>
-                </div>
+             <div class="accordion" id="bmwAccordion">
 
-                <div class="col-md-4">
-                    <div class="card h-100 text-center">
-                        <img src="images/7series.avif" class="card-img-top" alt="BMW model">
-                        <div class="card-body">
-                            <h5 class="card-title">BMW 7 Series</h5>
-                            <p class="card-text">Executive comfort with high class technology.</p>
+                <!--Models-->
+                <div class="accordion-item">
+            <h2 class="accordion-header" id="headingM">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseM">
+                    M Performance Models
+                </button>
+            </h2>
+            <div id="collapseM" class="accordion-collapse collapse show" data-bs-parent="#bmwAccordion">
+                <div class="accordion-body">
+
+                    <div class="model-row row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <img src="images/m4.avif" alt="BMW M4" class="img-fluid rounded sub-model-image">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>BMW M4</h3>
+                            <p>Sporty coupe with aggressive styling and thrilling performance.</p>
+                            <p><strong>Engine:</strong> 3.0L Twin Turbo Inline-6</p>
+                            <p><strong>Top Speed:</strong> 290 km/h</p>
+                            <a href="contact.html" class="btn btn-outline-dark">Enquire</a>
                         </div>
                     </div>
+
+                    <div class="model-row row align-items-center flex-md-row-reverse mb-5">
+                        <div class="col-md-6">
+                            <img src="images/m3.jpg" alt="BMW M3" class="img-fluid rounded sub-model-image">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>BMW M3</h3>
+                            <p>Performance saloon designed for speed, balance and everyday use.</p>
+                            <p><strong>Engine:</strong> 3.0L Twin Turbo Inline-6</p>
+                            <p><strong>Top Speed:</strong> 290 km/h</p>
+                            <a href="contact.html" class="btn btn-outline-dark">Enquire</a>
+                        </div>
+                    </div>
+
+                    <div class="model-row row align-items-center mb-4">
+                        <div class="col-md-6">
+                            <img src="images/m340i.jpg" alt="BMW M340i" class="img-fluid rounded sub-model-image">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>BMW M340i</h3>
+                            <p>A refined sports sedan with strong performance and everyday practicality.</p>
+                            <p><strong>Engine:</strong> 3.0L Turbo Inline-6</p>
+                            <p><strong>Top Speed:</strong> 250 km/h</p>
+                            <a href="contact.html" class="btn btn-outline-dark">Enquire</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!--X Models-->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingX">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseX">
+                    X Series SUVs
+                </button>
+            </h2>
+            <div id="collapseX" class="accordion-collapse collapse" data-bs-parent="#bmwAccordion">
+                <div class="accordion-body">
+
+                    <div class="model-row row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <img src="images/x6m.avif" alt="BMW X6 M" class="img-fluid rounded sub-model-image">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>BMW X6 M</h3>
+                            <p>Luxury SUV with aggressive design, commanding presence and powerful performance.</p>
+                            <p><strong>Engine:</strong> 4.4L Twin Turbo V8</p>
+                            <p><strong>Top Speed:</strong> 290 km/h</p>
+                            <a href="contact.html" class="btn btn-outline-dark">Enquire</a>
+                        </div>
+                    </div>
+
+                    <div class="model-row row align-items-center flex-md-row-reverse mb-5">
+                        <div class="col-md-6">
+                            <img src="images/x5m.jpg" alt="BMW X5 M" class="img-fluid rounded sub-model-image">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>BMW X5 M</h3>
+                            <p>Performance SUV that balances family practicality with M engineering.</p>
+                            <p><strong>Engine:</strong> 4.4L Twin Turbo V8</p>
+                            <p><strong>Top Speed:</strong> 290 km/h</p>
+                            <a href="contact.html" class="btn btn-outline-dark">Enquire</a>
+                        </div>
+                    </div>
+
+                    <div class="model-row row align-items-center mb-4">
+                        <div class="col-md-6">
+                            <img src="images/x7.jpg" alt="BMW X7" class="img-fluid rounded sub-model-image">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>BMW X7</h3>
+                            <p>Full-size luxury SUV with premium comfort, space and advanced technology.</p>
+                            <p><strong>Engine:</strong> 3.0L Turbo Inline-6</p>
+                            <p><strong>Top Speed:</strong> 245 km/h</p>
+                            <a href="contact.html" class="btn btn-outline-dark">Enquire</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--BMW Series-->
+         <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeries">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeries">
+                    BMW Series Range
+                </button>
+            </h2>
+            <div id="collapseSeries" class="accordion-collapse collapse" data-bs-parent="#bmwAccordion">
+                <div class="accordion-body">
+
+                    <div class="model-row row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <img src="images/330i.jpg" alt="BMW 330i" class="img-fluid rounded sub-model-image">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>BMW 330i</h3>
+                            <p>Well-balanced executive saloon with sporty feel and daily comfort.</p>
+                            <p><strong>Engine:</strong> 2.0L Turbo Inline-4</p>
+                            <p><strong>Top Speed:</strong> 250 km/h</p>
+                            <a href="contact.html" class="btn btn-outline-dark">Enquire</a>
+                        </div>
+                    </div>
+
+                    <div class="model-row row align-items-center flex-md-row-reverse mb-5">
+                        <div class="col-md-6">
+                            <img src="images/5series.jpg" alt="BMW 5 Series" class="img-fluid rounded sub-model-image">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>BMW 5 Series</h3>
+                            <p>Luxury executive sedan built for comfort, elegance and performance.</p>
+                            <p><strong>Engine:</strong> 2.0L / 3.0L Turbo options</p>
+                            <p><strong>Top Speed:</strong> 250 km/h</p>
+                            <a href="contact.html" class="btn btn-outline-dark">Enquire</a>
+                        </div>
+                    </div>
+
+                    <div class="model-row row align-items-center mb-4">
+                        <div class="col-md-6">
+                            <img src="images/7series.avif" alt="BMW 7 Series" class="img-fluid rounded sub-model-image">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>BMW 7 Series</h3>
+                            <p>Flagship luxury sedan with premium technology and executive comfort.</p>
+                            <p><strong>Engine:</strong> 3.0L Turbo / hybrid options</p>
+                            <p><strong>Top Speed:</strong> 250 km/h</p>
+                            <a href="contact.html" class="btn btn-outline-dark">Enquire</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+            
     </main>
 
     <footer class="bg-dark text-white mt-5">
