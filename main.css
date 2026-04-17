@@ -9,11 +9,13 @@ body {
 h1, h2, h3, h4, h5 {
     font-weight: 700;
     margin-bottom: 15px;
+    line-height: 1.2;
 }
 
 p {
-    line-height: 1.7;
-    font-size: 1rem;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin-bottom: 12px;
 }
 
 .site-logo {
@@ -44,109 +46,142 @@ p {
 }
 
 section {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 
 .card,
-.specs-box {
+.specs-box,
+.content-box,
+.info-box,
+.mission-box,
+.article-block,
+.model-card-block {
     border: none;
     background: white;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     border-radius: 12px;
 }
 
-.specs-box {
+.specs-box,
+.content-box,
+.info-box,
+.mission-box,
+.article-block {
     padding: 24px;
-}
-
-.brand-main-image {
-    width: 100%;
-    border-radius: 12px;
-    object-fit: cover;
-}
-
-.sub-model-image {
-    width: 100%;
-    max-height: 320px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.model-row {
-    padding: 10px 0;
-}
-
-.model-row h3 {
-    font-size: 1.8rem;
-    margin-bottom: 12px;
-}
-
-.model-row p {
-    margin-bottom: 10px;
-    color: #444;
 }
 
 .btn-dark,
 .btn-outline-dark,
 .btn-primary {
     border-radius: 0;
-    padding: 10px 20px;
+    padding: 11px 22px;
     font-weight: 500;
 }
 
-.accordion-item {
-    border: none;
-    margin-bottom: 15px;
-    border-radius: 12px !important;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+.brand-intro,
+.page-intro {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.accordion-button {
-    font-weight: 700;
-    font-size: 1.1rem;
-    padding: 18px 20px;
+.brand-intro h1,
+.page-intro h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
 }
 
-.accordion-button:not(.collapsed) {
-    background-color: #111;
-    color: white;
+.brand-intro p,
+.page-intro p {
+    max-width: 760px;
+    margin: 0 auto;
+    color: #444;
 }
 
-.accordion-body {
-    background: white;
-    padding: 25px;
+.brand-main-image {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.carousel {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .about-image {
     width: 100%;
+    height: 420px;
+    object-fit: cover;
     border-radius: 12px;
 }
 
-form {
-    background-color: white;
-    padding: 25px;
+.model-card-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto 28px auto;
+    overflow: hidden;
+    padding: 22px;
+}
+
+.sub-model-image {
+    width: 100%;
+    max-width: 500px;
+    height: 260px;
+    object-fit: cover;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    justify-self: center;
+}
+
+.model-text {
+    padding: 0px;
+}
+
+.model-text h3 {
+    font-size: 1.7rem;
+    margin-bottom: 12px;
+}
+
+.model-text p {
+    color: #444;
+}
+
+.article-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 18px;
+}
+
+.mission-box {
+    height: 100%;
+    text-align: center;
+}
+
+.mission-box h3 {
+    font-size: 1.45rem;
 }
 
 .form-control,
 .form-select {
     border-radius: 0;
-    padding: 10px;
+    padding: 12px;
+    font-size: 1rem;
 }
 
-.card img {
-    height: 220px;
-    object-fit: cover;
-}
-
-.card-title {
-    font-weight: bold;
-}
-
-.card-text {
-    color: #444;
+label.form-label {
+    font-weight: 600;
 }
 
 footer {
@@ -182,24 +217,79 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    main.container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
     h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     h2 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
-    .model-row h3 {
-        font-size: 1.5rem;
-        margin-top: 15px;
+    h3 {
+        font-size: 1.45rem;
     }
 
-    .sub-model-image {
-        max-height: 240px;
+    p {
+        font-size: 1.05rem;
+        line-height: 1.9;
     }
 
-    .accordion-button {
+    .brand-intro h1,
+    .page-intro h1 {
+        font-size: 2.2rem;
+    }
+
+    .brand-main-image {
+        height: 250px;
+    }
+
+    .about-image {
+        height: 250px;
+    }
+
+    .sub-model-image,
+    .article-image {
+        height: 220px;
+    }
+
+    .specs-box,
+    .content-box,
+    .info-box,
+    .mission-box,
+    .article-block,
+    .model-text {
+        padding: 20px;
+    }
+
+    .model-card-block {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 18px;
+}
+
+.sub-model-image {
+    max-width: 100%;
+    height: 220px;
+}
+
+    .btn-dark,
+    .btn-outline-dark,
+    .btn-primary {
+        width: 100%;
+        padding: 12px 18px;
         font-size: 1rem;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer .col-md-4 {
+        margin-bottom: 20px;
     }
 }

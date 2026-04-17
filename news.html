@@ -2,179 +2,122 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schwarzwald Autos</title>
-
-    <!--Bootstrap CSS-->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
-    <!--Header-->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/Chrome emblem with “GD” monogram.png" alt="Schwarzwald Autos logo" class="site-logo">
-                    <span>Schwarzwald Autos</span>
-                </a>
-
-                <!--Mobil nav-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!--Links-->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="home.html">Home</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Brands</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="bmw.html">BMW</a></li>
-                                <li><a class="dropdown-item" href="audi.html">Audi</a></li>
-                                <li><a class="dropdown-item" href="mercedes.html">Mercedes</a></li>
-                                <li><a class="dropdown-item" href="porsche.html">Porsche</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="news.html">News</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html"> Contact</a>
-                        </li>
-
-
-                    </ul>
-                </div>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Chrome emblem with “GD” monogram.png" alt="Schwarzwald Autos logo" class="site-logo">
+                <span>Schwarzwald Autos</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Brands</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="bmw.html">BMW</a></li>
+                            <li><a class="dropdown-item" href="audi.html">Audi</a></li>
+                            <li><a class="dropdown-item" href="mercedes.html">Mercedes</a></li>
+                            <li><a class="dropdown-item" href="porsche.html">Porsche</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
-    <main class="container my-5">
-        <section class="text-center mb-5">
-            <h1>Latest News</h1>
-            <p>Stay updated with the lastest automotive news and trends.</p>
-        </section>
+<main class="container my-5">
+    <section class="page-intro">
+        <h1>Latest News</h1>
+        <p>Stay updated with the latest automotive news, launches and premium performance highlights.</p>
+    </section>
 
-        <section class="row g-4">
+    <section class="article-block">
+        <img src="images/bmwm3news.webp" alt="BMW news" class="article-image">
+        <h2>THE ULTIMATE TOURING.</h2>
+        <p>A motorsport dream that began as an April Fool’s prank has become reality: the BMW M3 Touring 24H is the ultimate racing car with a touring car body.</p>
+        <p>Developed using technology from the BMW M4 GT3 EVO, it is built specifically for competition and will line up at the 2026 Nürburgring 24-hour race.</p>
+        <a href="#" class="btn btn-dark">Read More</a>
+    </section>
+
+    <section class="article-block">
+        <img src="images/A3-sLine.avif" alt="Audi A3 news" class="article-image">
+        <h2>Introducing the New Audi A3 Sportback S line</h2>
+        <p>The new Audi A3 Sportback TFSI 110kW S line offers an accessible entry point into the Audi compact segment.</p>
+        <p>It introduces revised S line equipment structures across the A3 range for the local market.</p>
+        <a href="#" class="btn btn-dark">Read More</a>
+    </section>
+
+    <section class="article-block">
+        <img src="images/header-1920x1080-desktop.avif" alt="Audi RSQ8 news" class="article-image">
+        <h2>Audi Botswana Launches the RS Q8 Performance</h2>
+        <p>The RS Q8 Performance completes the updated Q8 range and stands as the most powerful combustion vehicle in Audi Sport history.</p>
+        <p>Its Nürburgring record further cements its place among the world’s fastest production SUVs.</p>
+        <a href="#" class="btn btn-dark">Read More</a>
+    </section>
+
+    <section class="article-block">
+        <img src="images/mercluxury.avif" alt="Mercedes news" class="article-image">
+        <h2>Mercedes Luxury Redefined</h2>
+        <p>Mercedes-Benz continues to focus on comfort, elegance and advanced technology in its latest luxury models.</p>
+        <a href="#" class="btn btn-dark">Read More</a>
+    </section>
+
+    <section class="article-block">
+        <img src="images/gt3rsrearagain.avif" alt="Porsche news" class="article-image">
+        <h2>Porsche Track Lap Times on the Rise</h2>
+        <p>Porsche’s latest 911 build continues to set impressive lap times, proving once again that performance engineering remains at the heart of the brand.</p>
+        <a href="#" class="btn btn-dark">Read More</a>
+    </section>
+</main>
+
+<footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+        <div class="row">
             <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/news1.jpg" class="card-img-top" alt="BMW news">
-                    <div class="card-body">
-                        <h5 class="card-title">BMW Expands Performance Range</h5>
-                        <p class="card-text">BMW introduces exciting updates to its performance linep.</p>
-                        <a href="#" class="btn btn-dark btn-sm">Read More</a>
-                    </div>   
-                </div>
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="contact.html" class="text-white">Email</a></li>
+                    <li><a href="contact.html" class="text-white">Enquiries</a></li>
+                </ul>
             </div>
-
             <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/A3-sLine.avif" class="card-img-top" alt="Audi news">
-                    <div class="card-body">
-                        <h5 class="card-title">Introducing the new Audi A3 Sportback S line: an accessible entry point to the Audi compact segment</h5>
-                        <p class="card-text">New Audi A3 Sportback TFSI 110kW S line introduced with pricing from P569,000</p>
-                        <p class="card-text">Revised S line equipment structure across the A3 range for the local market: S line, S line Plus and S line Black</p>
-                        <a href="#" class="btn btn-dark btn-sm">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/header-1920x1080-desktop.avif" class="card-img-top" alt="Audi news">
-                    <div class="card-body">
-                        <h5 class="card-title">Audi Botswana launches the brand’s most powerful combustion vehicle yet: the RS Q8 performance</h5>
-                        <p class="card-text">The RS Q8 performance completes the updated Q8 range, which includes the 45 TDI, 55 TFSI and petrol-powered SQ8</p>
-                        <p class="card-text">Its output of 471kW makes this SUV the most powerful series-produced combustion model in the history of Audi Sport GmbH</p>
-                        <p class="card-text">With a time of 7:36.698 minutes, the RS Q8 performance has set the record for production SUVs at the fearsome Nürburgring Nordschleife circuit</p>
-                        <a href="#" class="btn btn-dark btn-sm">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/news3.jpg" class="card-img-top" alt="Mercedes news">
-                    <div class="card-body">
-                        <h5 class="card-title">Mercedes Luxury Redefined</h5>
-                        <p class="card-text">Mercedes focuses on comfort, elegance and advanced technology.</p>
-                        <a href="#" class="btn btn-dark btn-sm">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/news4.jpg" class="card-img-top" alt="Porsche news">
-                    <div class="card-body">
-                        <h5 class="card-title">Porsche Track Lap Times in the rise. </h5>
-                        <p class="card-text">
-                            Porsche latest build the 911.2 Has hit stunning track times at the nurburgring
-                            Beating its fellow competitors doing a time of 7:48s.
-                        </p>
-                        <a href="#" class="btn btn-dark btn-sm">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-dark text-white mt-5">
-        <div class="container py-4">
-            <div class="row">
-
-                <!--contact-->
-                <div class="col-md-4">
-                    <h5>Contact Us</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="contact.html" class="text-white">Email</a></li>
-                        <li><a href="contact.html" class="text-white">Enquiries</a></li>
-                    </ul>
-                </div>
-
-                <!--Services BRo-->
-                <div class="col-md-4">
-                <h5>Services</h5> 
+                <h5>Services</h5>
                 <ul class="list-unstyled">
                     <li><a href="bmw.html" class="text-white">BMW</a></li>
                     <li><a href="audi.html" class="text-white">Audi</a></li>
                     <li><a href="mercedes.html" class="text-white">Mercedes</a></li>
                     <li><a href="porsche.html" class="text-white">Porsche</a></li>
-                </ul>   
-                </div>
-
-                <!--Legal Terms-->
-                <div class="col-md-4">
-                    <h5>Legal</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Privacy Policy</a></li>
-                        <li><a href="#" class="text-white">Terms</a></li>
-                    </ul>
-                </div>
-
+                    <li><a href="contact.html" class="text-white">Book A Test Drive</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Privacy Policy</a></li>
+                    <li><a href="#" class="text-white">Terms</a></li>
+                </ul>
             </div>
         </div>
+    </div>
+    <div class="text-center pb-3">
+        <p>&copy; 2026 Schwarzwald Autos</p>
+    </div>
+</footer>
 
-        <div class="text-center pb-3">
-            <p>&copy; 2026 Schwarzwald Autos</p>
-        </div>
-    </footer>
-
-    <!--Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

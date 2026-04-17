@@ -2,176 +2,161 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schwarzwald Autos</title>
-
-    <!--Bootstrap CSS-->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Chrome emblem with “GD” monogram.png" alt="Schwarzwald Autos logo" class="site-logo">
+                <span>Schwarzwald Autos</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Brands</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="bmw.html">BMW</a></li>
+                            <li><a class="dropdown-item" href="audi.html">Audi</a></li>
+                            <li><a class="dropdown-item" href="mercedes.html">Mercedes</a></li>
+                            <li><a class="dropdown-item" href="porsche.html">Porsche</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 
-    <!--Header-->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/Chrome emblem with “GD” monogram.png" alt="Schwarzwald Autos logo" class="site-logo">
-                    <span>Schwarzwald Autos</span>
-                </a>
+<main class="container my-5">
+    <section class="brand-intro">
+        <h1>Porsche Collection</h1>
+        <p>Discover Porsche models engineered for speed, precision and true driving emotion.</p>
+    </section>
 
-                <!--Mobil nav-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!--Links-->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="home.html">Home</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Brands</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="bmw.html">BMW</a></li>
-                                <li><a class="dropdown-item" href="audi.html">Audi</a></li>
-                                <li><a class="dropdown-item" href="mercedes.html">Mercedes</a></li>
-                                <li><a class="dropdown-item" href="porsche.html">Porsche</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="news.html">News</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html"> Contact</a>
-                        </li>
-
-
-                    </ul>
+    <section>
+        <div id="porscheCarousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="images/gt3rsfront.png" class="d-block w-100 brand-main-image" alt="Porsche GT3RS front">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/gt3rsinterior.png" class="d-block w-100 brand-main-image" alt="Porsche GT3RS interior">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/gt3rsrear.png" class="d-block w-100 brand-main-image" alt="Porsche GT3RS rear">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/gt3rsrearagain.avif" class="d-block w-100 brand-main-image" alt="Porsche GT3RS rear view">
                 </div>
             </div>
-        </nav>
-    </header>
+            <button class="carousel-control-prev" type="button" data-bs-target="#porscheCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#porscheCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
 
-    <main class="container my-5">
-        <section class="text-center mb-5">
-            <h1>Porsche Collection</h1>
-            <p>Discover Porsche models engineered for speed, precision and true driving emotion.</p>
-        </section>
+    <section class="specs-box">
+        <h2>Porsche GT3RS</h2>
+        <p><strong>Engine:</strong> 4.0L Naturally Aspirated Flat-Six</p>
+        <p><strong>Transmission:</strong> 7-Speed PDK Dual-Clutch</p>
+        <p><strong>Horsepower:</strong> 518 bhp</p>
+        <p><strong>Top Speed:</strong> 296 km/h</p>
+        <p><strong>Price:</strong> P3,000,000</p>
+        <a href="contact.html" class="btn btn-dark">Enquire Now</a>
+    </section>
 
-        <section class="row align-items-center mb-5">
-            <div class="col-md-8">
-                <img src="images/gt3rsfront.png" alt="Porsche car" class="img-fluid rounded">
+    <section class="content-box">
+        <h2>About This Model</h2>
+        <p>The Porsche 911 GT3 RS is a road-legal track car with a 518 hp flat-six, advanced aerodynamics and race-ready precision built for maximum downforce and handling.</p>
+    </section>
+
+    <section>
+        <h2 class="text-center mb-4">More Porsche Models</h2>
+
+        <div class="model-card-block">
+            <img src="images/porschepanamera.jpeg" alt="Porsche Panamera" class="sub-model-image">
+            <div class="model-text">
+                <h3>Porsche Panamera</h3>
+                <p>Executive luxury paired with sports car character.</p>
+                <p><strong>Engine:</strong> 2.9L / 4.0L options</p>
+                <p><strong>Top Speed:</strong> 315 km/h</p>
+                <a href="contact.html" class="btn btn-outline-dark">Enquire</a>
+            </div>
+        </div>
+
+        <div class="model-card-block">
+            <img src="images/porschecarrera.jpeg" alt="Porsche 911 Carrera" class="sub-model-image">
+            <div class="model-text">
+                <h3>Porsche 911 Carrera</h3>
+                <p>Iconic design, daily usability and legendary performance.</p>
+                <p><strong>Engine:</strong> 3.0L Twin Turbo Flat-Six</p>
+                <p><strong>Top Speed:</strong> 294 km/h</p>
+                <a href="contact.html" class="btn btn-outline-dark">Enquire</a>
+            </div>
+        </div>
+
+        <div class="model-card-block">
+            <img src="images/porschecayenne.jpeg" alt="Porsche Cayenne" class="sub-model-image">
+            <div class="model-text">
+                <h3>Porsche Cayenne</h3>
+                <p>SUV practicality with unmistakable Porsche power and refinement.</p>
+                <p><strong>Engine:</strong> 3.0L / 4.0L options</p>
+                <p><strong>Top Speed:</strong> 273 km/h</p>
+                <a href="contact.html" class="btn btn-outline-dark">Enquire</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="contact.html" class="text-white">Email</a></li>
+                    <li><a href="contact.html" class="text-white">Enquiries</a></li>
+                </ul>
             </div>
             <div class="col-md-4">
-                <div class="card p-3">
-                    <h3>Porsche GT3RS</h3>
-                    <p><strong>Engine:</strong>4.0L Naturally Aspirated Flat-Six</p>
-                    <p><strong>Transmission:</strong>7-speed PDK dual-clutch</p>
-                    <p><strong>Brake Horsepower:</strong>518 bhp</p>
-                    <p><strong>Top Speed:</strong>296 km/h</p>
-                    <p><strong>Price:</strong>P3,000,000</p>
-                    <a href="contact.html" class="btn btn-dark">Enquire Now</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-5">
-            <h2>About This Model</h2>
-            <p>
-                The Porsche 911 GT3 RS (992.2) is a road-legal track car with a 518 hp flat-six, advanced aerodynamics, and race-ready precision.
-                 With cutting-edge aerodynamics including Porsche Active Aerodynamics and Drag Reduction System, it's engineered for maximum downforcea and precision handling.
-            </p>
-        </section>
-
-        <section>
-            <h2 class="mb-4">More Porsche Models</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 text-center">
-                        <img src="images/porschepanamera.jpeg" class="card-img-top" alt="BMW model">
-                        <div class="card-body">
-                            <h5 class="card-title">Porsche Panamera</h5>
-                            <p class="card-text">Executive luxury paired with sports car character.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100 text-center">
-                        <img src="images/porschecarrera.jpeg" class="card-img-top" alt="Porsche model">
-                        <div class="card-body">
-                            <h5 class="card-title">Porsche 911 Carrera</h5>
-                            <p class="card-text">Iconic design, daily usability and legendary performance.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100 text-center">
-                        <img src="images/porschecayenne.jpeg" class="card-img-top" alt="BMW model">
-                        <div class="card-body">
-                            <h5 class="card-title">Porsche Cayenne</h5>
-                            <p class="card-text">SUV practicality with unmistakable Porsche power and refinement.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-dark text-white mt-5">
-        <div class="container py-4">
-            <div class="row">
-
-                <!--contact-->
-                <div class="col-md-4">
-                    <h5>Contact Us</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="contact.html" class="text-white">Email</a></li>
-                        <li><a href="contact.html" class="text-white">Enquiries</a></li>
-                    </ul>
-                </div>
-
-                <!--Services BRo-->
-                <div class="col-md-4">
-                <h5>Services</h5> 
+                <h5>Services</h5>
                 <ul class="list-unstyled">
                     <li><a href="bmw.html" class="text-white">BMW</a></li>
                     <li><a href="audi.html" class="text-white">Audi</a></li>
                     <li><a href="mercedes.html" class="text-white">Mercedes</a></li>
                     <li><a href="porsche.html" class="text-white">Porsche</a></li>
-                </ul>   
-                </div>
-
-                <!--Legal Terms-->
-                <div class="col-md-4">
-                    <h5>Legal</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Privacy Policy</a></li>
-                        <li><a href="#" class="text-white">Terms</a></li>
-                    </ul>
-                </div>
-
+                    <li><a href="contact.html" class="text-white">Book A Test Drive</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Privacy Policy</a></li>
+                    <li><a href="#" class="text-white">Terms</a></li>
+                </ul>
             </div>
         </div>
+    </div>
+    <div class="text-center pb-3">
+        <p>&copy; 2026 Schwarzwald Autos</p>
+    </div>
+</footer>
 
-        <div class="text-center pb-3">
-            <p>&copy; 2026 Schwarzwald Autos</p>
-        </div>
-    </footer>
-
-    <!--Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

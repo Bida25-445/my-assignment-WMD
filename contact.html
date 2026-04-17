@@ -2,155 +2,162 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schwarzwald Autos</title>
-
-    <!--Bootstrap CSS-->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
-    <!--Header-->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/Chrome emblem with “GD” monogram.png" alt="Schwarzwald Autos logo" class="site-logo">
-                    <span>Schwarzwald Autos</span>
-                </a>
-
-                <!--Mobil nav-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!--Links-->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="home.html">Home</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Brands</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="bmw.html">BMW</a></li>
-                                <li><a class="dropdown-item" href="audi.html">Audi</a></li>
-                                <li><a class="dropdown-item" href="mercedes.html">Mercedes</a></li>
-                                <li><a class="dropdown-item" href="porsche.html">Porsche</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="news.html">News</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html"> Contact</a>
-                        </li>
-
-
-                    </ul>
-                </div>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Chrome emblem with “GD” monogram.png" alt="Schwarzwald Autos logo" class="site-logo">
+                <span>Schwarzwald Autos</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Brands</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="bmw.html">BMW</a></li>
+                            <li><a class="dropdown-item" href="audi.html">Audi</a></li>
+                            <li><a class="dropdown-item" href="mercedes.html">Mercedes</a></li>
+                            <li><a class="dropdown-item" href="porsche.html">Porsche</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
-    <main class="container my-5">
-        <section class="text-center mb-5">
-            <h1>Contact Us</h1>
-            <p>Get in touch with Schwarzwald Autos for enquiries, test drive bookings and support.
-                Our team is ready to assist you with premium information and dealership services.
-            </p>
-        </section>
+<main class="container my-5">
+    <section class="page-intro">
+        <h1>Contact Us</h1>
+        <p>Get in touch with Schwarzwald Autos for vehicle enquiries, test drive bookings and dealership support.</p>
+    </section>
 
-        <section class="row">
-            <div class="col-md-5 mb-4">
-                <h3>Contact Information</h3>
-                <p><strong>Email:</strong> infor@germandealer.com</p>
-                <p><Strong>Phone:</Strong>3906000/ +267 123 4567</p>
-                <p><strong>Location:</strong>Gaborone, Botswana</p>
+    <section class="info-box">
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> info@schwarzwaldautos.com</p>
+        <p><strong>Phone:</strong> +267 3906000 / +267 123 4567</p>
+        <p><strong>Location:</strong> Gaborone, Botswana</p>
+        <p>Visit our dealership or send us an enquiry regarding quotations, availability, financing or premium vehicle support.</p>
+    </section>
+
+    <section class="content-box">
+        <h2>General Enquiry Form</h2>
+        <form>
+            <div class="mb-3">
+                <label for="fullname" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullname" required>
             </div>
-
-            <div class="col-md-7">
-                <h3>Send Us a Message</h3>
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="name" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="brand" class="form-label">Preferred Brand</label>
-                        <select class="form-select" id="brand" required>
-                            <option value="">Choose a brand</option>
-                            <option>BMW</option>
-                            <option>Audi</option>
-                            <option>Mercedes</option>
-                            <option>Porsche</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="5" required>Enter Details e.g X3M quote, test-drive e.t.c</textarea>    
-                    </div>
-
-                    <button type="submit" class="btn btn-dark">Submit</button>
-                </form>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" required>
             </div>
-        </section>
-    </main>
+            <div class="mb-3">
+                <label for="brand" class="form-label">Preferred Brand</label>
+                <select class="form-select" id="brand" required>
+                    <option value="">Choose a brand</option>
+                    <option>BMW</option>
+                    <option>Audi</option>
+                    <option>Mercedes</option>
+                    <option>Porsche</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Enter details e.g. X3 M quote, financing enquiry, availability request" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Submit Enquiry</button>
+        </form>
+    </section>
 
-    <footer class="bg-dark text-white mt-5">
-        <div class="container py-4">
-            <div class="row">
+    <section class="content-box">
+        <h2>Book a Test Drive</h2>
+        <form>
+            <div class="mb-3">
+                <label for="td-name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="td-name" required>
+            </div>
+            <div class="mb-3">
+                <label for="td-email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="td-email" required>
+            </div>
+            <div class="mb-3">
+                <label for="td-phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="td-phone" required>
+            </div>
+            <div class="mb-3">
+                <label for="td-brand" class="form-label">Brand</label>
+                <select class="form-select" id="td-brand" required>
+                    <option value="">Choose a brand</option>
+                    <option>BMW</option>
+                    <option>Audi</option>
+                    <option>Mercedes</option>
+                    <option>Porsche</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="td-model" class="form-label">Preferred Model</label>
+                <input type="text" class="form-control" id="td-model" placeholder="e.g. BMW M5 CS" required>
+            </div>
+            <div class="mb-3">
+                <label for="td-date" class="form-label">Preferred Date</label>
+                <input type="date" class="form-control" id="td-date" required>
+            </div>
+            <div class="mb-3">
+                <label for="td-message" class="form-label">Additional Notes</label>
+                <textarea class="form-control" id="td-message" rows="4" placeholder="Enter preferred time, model interest or any extra request"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Book Test Drive</button>
+        </form>
+    </section>
+</main>
 
-                <!--contact-->
-                <div class="col-md-4">
-                    <h5>Contact Us</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="contact.html" class="text-white">Email</a></li>
-                        <li><a href="contact.html" class="text-white">Enquiries</a></li>
-                    </ul>
-                </div>
-
-                <!--Services BRo-->
-                <div class="col-md-4">
-                <h5>Services</h5> 
+<footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="contact.html" class="text-white">Email</a></li>
+                    <li><a href="contact.html" class="text-white">Enquiries</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Services</h5>
                 <ul class="list-unstyled">
                     <li><a href="bmw.html" class="text-white">BMW</a></li>
                     <li><a href="audi.html" class="text-white">Audi</a></li>
                     <li><a href="mercedes.html" class="text-white">Mercedes</a></li>
                     <li><a href="porsche.html" class="text-white">Porsche</a></li>
-                </ul>   
-                </div>
-
-                <!--Legal Terms-->
-                <div class="col-md-4">
-                    <h5>Legal</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Privacy Policy</a></li>
-                        <li><a href="#" class="text-white">Terms</a></li>
-                    </ul>
-                </div>
-
+                    <li><a href="contact.html" class="text-white">Book A Test Drive</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Privacy Policy</a></li>
+                    <li><a href="#" class="text-white">Terms</a></li>
+                </ul>
             </div>
         </div>
+    </div>
+    <div class="text-center pb-3">
+        <p>&copy; 2026 Schwarzwald Autos</p>
+    </div>
+</footer>
 
-        <div class="text-center pb-3">
-            <p>&copy; 2026 Schwarzwald Autos</p>
-        </div>
-    </footer>
-
-    <!--Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

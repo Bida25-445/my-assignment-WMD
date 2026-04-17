@@ -2,175 +2,161 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schwarzwald Autos</title>
-
-    <!--Bootstrap CSS-->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Chrome emblem with “GD” monogram.png" alt="Schwarzwald Autos logo" class="site-logo">
+                <span>Schwarzwald Autos</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Brands</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="bmw.html">BMW</a></li>
+                            <li><a class="dropdown-item" href="audi.html">Audi</a></li>
+                            <li><a class="dropdown-item" href="mercedes.html">Mercedes</a></li>
+                            <li><a class="dropdown-item" href="porsche.html">Porsche</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 
-    <!--Header-->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/Chrome emblem with “GD” monogram.png" alt="Schwarzwald Autos logo" class="site-logo">
-                    <span>Schwarzwald Autos</span>
-                </a>
+<main class="container my-5">
+    <section class="brand-intro">
+        <h1>Audi Collection</h1>
+        <p>Explore Audi models that combine progressive styling, performance and intelligent technology.</p>
+    </section>
 
-                <!--Mobil nav-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!--Links-->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="home.html">Home</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Brands</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="bmw.html">BMW</a></li>
-                                <li><a class="dropdown-item" href="audi.html">Audi</a></li>
-                                <li><a class="dropdown-item" href="mercedes.html">Mercedes</a></li>
-                                <li><a class="dropdown-item" href="porsche.html">Porsche</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="news.html">News</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html"> Contact</a>
-                        </li>
-
-
-                    </ul>
+    <section>
+        <div id="audiCarousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="images/rs6front.avif" class="d-block w-100 brand-main-image" alt="Audi RS6 front">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/rs6interior.avif" class="d-block w-100 brand-main-image" alt="Audi RS6 interior">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/rs6side.avif" class="d-block w-100 brand-main-image" alt="Audi RS6 side">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/rs6rear.avif" class="d-block w-100 brand-main-image" alt="Audi RS6 rear">
                 </div>
             </div>
-        </nav>
-    </header>
+            <button class="carousel-control-prev" type="button" data-bs-target="#audiCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#audiCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
 
-    <main class="container my-5">
-        <section class="text-center mb-5">
-            <h1>Audi Collection</h1>
-            <p>Explore Audi models that combine progressive styling, performance and intelligent technology.</p>
-        </section>
+    <section class="specs-box">
+        <h2>Audi RS 6 Avant Performance</h2>
+        <p><strong>Engine:</strong> 4.0L Twin Turbo V8</p>
+        <p><strong>Transmission:</strong> 8-Speed Automatic AWD</p>
+        <p><strong>Horsepower:</strong> 591 bhp</p>
+        <p><strong>Top Speed:</strong> 305 km/h</p>
+        <p><strong>Price:</strong> P2,400,000</p>
+        <a href="contact.html" class="btn btn-dark">Enquire Now</a>
+    </section>
 
-        <section class="row align-items-center mb-5">
-            <div class="col-md-8">
-                <img src="images/rs6front.avif" alt="BMW featured car" class="img-fluid rounded">
+    <section class="content-box">
+        <h2>About This Model</h2>
+        <p>The Audi RS 6 Avant Performance delivers sleek design, everyday practicality and high-performance engineering in one bold package.</p>
+    </section>
+
+    <section>
+        <h2 class="text-center mb-4">More Audi Models</h2>
+
+        <div class="model-card-block">
+            <img src="images/rs3.jpeg" alt="Audi RS3" class="sub-model-image">
+            <div class="model-text">
+                <h3>Audi RS3</h3>
+                <p>Compact performance with aggressive styling and strong acceleration.</p>
+                <p><strong>Engine:</strong> 2.5L Turbo Inline-5</p>
+                <p><strong>Top Speed:</strong> 290 km/h</p>
+                <a href="contact.html" class="btn btn-outline-dark">Enquire</a>
+            </div>
+        </div>
+
+        <div class="model-card-block">
+            <img src="images/Audi RSQ8.jpeg" alt="Audi RSQ8" class="sub-model-image">
+            <div class="model-text">
+                <h3>Audi RSQ8</h3>
+                <p>Premium SUV design with comfort, space and commanding presence.</p>
+                <p><strong>Engine:</strong> 4.0L Twin Turbo V8</p>
+                <p><strong>Top Speed:</strong> 305 km/h</p>
+                <a href="contact.html" class="btn btn-outline-dark">Enquire</a>
+            </div>
+        </div>
+
+        <div class="model-card-block">
+            <img src="images/a8.avif" alt="Audi A8" class="sub-model-image">
+            <div class="model-text">
+                <h3>Audi A8</h3>
+                <p>Luxury saloon built for elegance, innovation and refined travel.</p>
+                <p><strong>Engine:</strong> 3.0L / 4.0L options</p>
+                <p><strong>Top Speed:</strong> 250 km/h</p>
+                <a href="contact.html" class="btn btn-outline-dark">Enquire</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="contact.html" class="text-white">Email</a></li>
+                    <li><a href="contact.html" class="text-white">Enquiries</a></li>
+                </ul>
             </div>
             <div class="col-md-4">
-                <div class="card p-3">
-                    <h3>Audi RS 6 avant perfomance</h3>
-                    <p><strong>Engine:</strong>4.0L Twin Turbo V8</p>
-                    <p><strong>Transmission:</strong>8-Speed Automatic AWD</p>
-                    <p><strong>Brake Horsepower:</strong>591 bhp</p>
-                    <p><strong>Top Speed:</strong>305 km/h</p>
-                    <p><strong>Price:</strong>P2,400,000</p>
-                    <a href="contact.html" class="btn btn-dark">Enquire Now</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-5">
-            <h2>About This Model</h2>
-            <p>
-                The Audi RS 6 Sportback delivers sleek design, everyday practicality and high-performance engineering in one bold package.
-            </p>
-        </section>
-
-        <section>
-            <h2 class="mb-4">More Audi Models</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 text-center">
-                        <img src="images/rs3.jpeg" class="card-img-top" alt="Audi model">
-                        <div class="card-body">
-                            <h5 class="card-title">Audi RS3</h5>
-                            <p class="card-text">Compact performance with aggressive styling and strong acceleration.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100 text-center">
-                        <img src="images/Audi RSQ8.jpeg" class="card-img-top" alt="Audi model">
-                        <div class="card-body">
-                            <h5 class="card-title">Audi RSQ8</h5>
-                            <p class="card-text">Premium SUV design with comfort, space and commanding presence.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100 text-center">
-                        <img src="images/A8.jpeg" class="card-img-top" alt="Audi model">
-                        <div class="card-body">
-                            <h5 class="card-title">Audi A8</h5>
-                            <p class="card-text">Luxury saloon built for elegance, innovation and refined travel.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-dark text-white mt-5">
-        <div class="container py-4">
-            <div class="row">
-
-                <!--contact-->
-                <div class="col-md-4">
-                    <h5>Contact Us</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="contact.html" class="text-white">Email</a></li>
-                        <li><a href="contact.html" class="text-white">Enquiries</a></li>
-                    </ul>
-                </div>
-
-                <!--Services BRo-->
-                <div class="col-md-4">
-                <h5>Services</h5> 
+                <h5>Services</h5>
                 <ul class="list-unstyled">
                     <li><a href="bmw.html" class="text-white">BMW</a></li>
                     <li><a href="audi.html" class="text-white">Audi</a></li>
                     <li><a href="mercedes.html" class="text-white">Mercedes</a></li>
                     <li><a href="porsche.html" class="text-white">Porsche</a></li>
-                </ul>   
-                </div>
-
-                <!--Legal Terms-->
-                <div class="col-md-4">
-                    <h5>Legal</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Privacy Policy</a></li>
-                        <li><a href="#" class="text-white">Terms</a></li>
-                    </ul>
-                </div>
-
+                    <li><a href="contact.html" class="text-white">Book A Test Drive</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Privacy Policy</a></li>
+                    <li><a href="#" class="text-white">Terms</a></li>
+                </ul>
             </div>
         </div>
+    </div>
+    <div class="text-center pb-3">
+        <p>&copy; 2026 Schwarzwald Autos</p>
+    </div>
+</footer>
 
-        <div class="text-center pb-3">
-            <p>&copy; 2026 Schwarzwald Autos</p>
-        </div>
-    </footer>
-
-    <!--Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
